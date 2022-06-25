@@ -1,0 +1,27 @@
+/* --------------Common Styles-------------- */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  color: rgb(9, 138, 202);
+  text-decoration: none;
+}
+/* --------------Common Styles-------------- */
