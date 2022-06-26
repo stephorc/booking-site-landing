@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', sans-serif;;
 }
@@ -21,7 +25,45 @@ li {
   list-style-type: none;
 }
 a {
-  color: rgb(9, 138, 202);
+  color: #000;
   text-decoration: none;
 }
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 8px;
+}
 /* --------------Common Styles-------------- */
+
+
+/* --------------Header-------------- */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar .contact {
+  display: flex;
+  gap: 2em;
+}
+.contact div {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+.contact p {
+  display: none;
+}
+.contact .fa-solid {
+  font-size: 1.2rem;
+}
+
+/* --------------Main-------------- */
+
+
+/* --------------Footer-------------- */
+
+
+/* --------------Media Queries-------------- */
