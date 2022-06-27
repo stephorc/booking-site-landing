@@ -39,10 +39,6 @@ a {
   color: #6d6d6d;
 }
 
-img {
-  width: 40%;
-}
-
 header,
 main,
 footer {
@@ -82,7 +78,75 @@ footer {
 }
 
 
+/* --------------Main, Common Styles-------------- */
+.listings .property-card,
+.featured,
+img {
+  width: 100%;
+}
+img {
+  border-radius: 1rem;
+}
+
+.listings,
+.featured .title {
+  margin: 1rem 0;
+}
+
+.listings img,
+.featured img {
+  object-fit: cover;
+}
+/* --------------Main, Common Styles-------------- */
+
 /* --------------Main-------------- */
+
+/* ------.listings------ */
+main .listings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.listings .property-card {
+  max-height: 300px;
+  font-size: .9rem;
+}
+.listings img {
+  height: 200px;
+}
+.listings .pc-title {
+  display: flex;
+  justify-content: space-between;
+}
+.listings p {
+  padding-bottom: .2rem;
+}
+
+/* ------.featured & .popular------ */
+main .featured {
+  padding: 4rem 0;
+}
+.feature-wrapper {
+  --gap: 1rem;
+  --num-cols: 5;
+  --row-height: 200px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+.featured h1 {
+  border-bottom: .2rem solid #ff385c;
+  display: inline;
+}
+.featured img {
+  height: 100%;
+}
+.featured .main-img {
+  grid-column: span 3;
+  grid-row: span 2;
+}
 
 
 /* --------------Footer-------------- */
