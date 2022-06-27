@@ -34,11 +34,24 @@ a {
   margin: auto;
   padding: 0 8px;
 }
+
+.grey {
+  color: #6d6d6d;
+}
+
+img {
+  width: 40%;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+}
 /* --------------Common Styles-------------- */
 
 
 /* --------------Header-------------- */
-
 .top-bar {
   display: flex;
   align-items: center;
@@ -60,10 +73,49 @@ a {
   font-size: 1.2rem;
 }
 
+.sort-bar {
+  display: flex;
+  justify-content: space-around;
+}
+.sort-bar p {
+  display: none;
+}
+
+
 /* --------------Main-------------- */
 
 
 /* --------------Footer-------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid #eee;
+}
+
+footer li {
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.back-to-top-btn {
+  display: flex;
+}
+.back-to-top-btn a {
+  font-size: 2rem;
+  margin: auto;
+}
+
+footer li,
+.back-to-top-btn .fa-solid {
+  transition: all .2s ease-in-out;
+}
+.back-to-top-btn .fa-solid,
+footer li:hover {
+  opacity: .5;
+}
+.back-to-top-btn .fa-solid:hover {
+  opacity: 1;
+}
 
 
 /* --------------Media Queries-------------- */
