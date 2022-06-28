@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="a-logo-lochome.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="-33.686256"
+     inkscape:cy="734.35288"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1267"
+     inkscape:window-height="877"
+     inkscape:window-x="88"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ff385c;stroke-width:0.578438"
+       d="M 100.54088,270.39048 C 35.17612,223.66824 -1.9641346,156.13933 8.9544085,103.8667 25.149467,26.332791 119.27368,-2.0585983 174.98083,53.786921 c 54.83063,54.966799 28.91946,146.067739 -60.73994,213.555329 -9.85164,7.41545 -8.12706,7.03173 -13.70001,3.04823 z M 121.7377,200.22785 C 184.04851,186.08771 205.83529,110.01109 160.16994,66.027469 115.3985,22.904837 41.592356,45.503431 27.933753,106.51664 15.725185,161.05251 67.304086,212.58042 121.7377,200.22785 Z M 73.058768,160.11692 c -2.775799,-2.34648 -2.802079,-2.58608 -2.802079,-25.55499 0,-21.72947 0,-21.72947 -6.8516,-21.72947 -8.442187,0 -10.488056,-1.33339 -7.842048,-5.11111 0.783914,-1.11916 41.06191,-28.532164 46.210849,-31.45083 4.15587,-2.355786 4.13859,-2.364356 29.54978,14.65189 22.973,15.3835 25.41072,17.3187 24.68519,19.5963 -0.61471,1.92965 -2.04921,2.31375 -8.64122,2.31375 -6.54149,0 -6.54149,0 -6.54149,21.10129 0,23.21434 -0.17708,24.58236 -3.43216,26.50513 -2.9812,1.76103 -62.221817,1.46454 -64.335222,-0.32196 z m 45.671062,-15.58603 c 0.98332,-0.98336 0.98332,-25.39345 0,-26.3768 -1.16082,-1.16082 -25.560792,-0.96475 -26.740375,0.21491 -0.768244,0.76822 -0.908991,2.77698 -0.908991,12.97353 0,10.19654 0.140789,12.20531 0.908991,12.97355 1.179583,1.17962 25.579555,1.37566 26.740375,0.21491 z"
+       id="path921" />
+  </g>
+</svg>
