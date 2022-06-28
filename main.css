@@ -188,39 +188,11 @@ img {
 .menu {
   justify-self: flex-end;
 }
-.desktop-menu {
-  display: none;
-}
 .mobile-menu {
   display: block;
 }
-
-.nav-menu h1 {
-  padding: 1rem;
-}
-
-.nav-menu li {
-  width: 100%;
-  font-size: 1rem;
-  padding: 1rem;
-}
-.nav-menu li:hover {
-  background-color: #eee;
-}
 .nav-menu {
-  background-color: #fff;
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  transition-duration: .3s;
-  padding-top: 1rem;
-}
-.nav-menu.active {
-  left: 0;
 }
 
 .mobile-menu,
@@ -430,6 +402,34 @@ footer li:hover {
   }
 }
 
+@media (max-width: 1023px) {
+  .nav-menu h1 {
+    padding: 1rem;
+  }
+  .nav-menu li {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .nav-menu li:hover {
+    background-color: #eee;
+  }
+  .nav-menu {
+    background-color: #fff;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    transition-duration: .3s;
+    padding-top: 1rem;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .navbar {
     grid-template-columns: repeat(3, 1fr);
@@ -440,20 +440,18 @@ footer li:hover {
   .search {
     margin-left: 0;
   }
-  .desktop-menu {
-    display: flex;
-  }
-  .desktop-menu ul {
-    display: flex;
-    font-size: 1rem;
-    gap: 1em;
-  }
-  .desktop-menu a {
-    display: flex;
-    flex-direction: row;
-  }
   .mobile-menu {
     display: none;
+  }
+  .nav-menu h1 {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .nav-menu a {
+    font-size: 1rem;
+    padding-left: 1em;
   }
   main .listings {
     grid-template-columns: repeat(4, 1fr);
