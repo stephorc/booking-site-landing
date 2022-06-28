@@ -14,3 +14,9 @@
 - Font  Awesome CDN
 - Google Fonts
 - Mobile-first workflow
+
+## Features
+
+- Dark mode
+- Hamburger menu
+- Clean, custom UI
