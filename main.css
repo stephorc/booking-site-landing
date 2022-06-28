@@ -73,7 +73,8 @@ a {
   color: #6d6d6d;
 }
 
-header,
+.top-bar,
+.navbar,
 main,
 footer {
   padding: 1rem;
@@ -107,7 +108,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
 }
 
 .top-bar .tagline {
@@ -210,7 +210,7 @@ img {
   color: #5e5e5e;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 0;
+  padding: 1.8rem 0 0;
   text-align: center;
 }
 .sort-bar .fa-solid {
