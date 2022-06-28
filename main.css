@@ -62,6 +62,9 @@ a {
   color: #000;
   text-decoration: none;
 }
+abbr {
+  text-decoration: none;
+}
 
 .container {
   max-width: 1240px;
@@ -153,12 +156,11 @@ img {
 .logo h1::after {
   content: 'Hosted';
 }
-.logo h1:hover:after {
+/* .logo h1:hover:after {
   content: 'dark-mode';
-}
+} */
 
 .search {
-  margin-left: 1rem;
   justify-self: center;
 }
 .search form {
@@ -218,6 +220,12 @@ img {
 }
 .sort-bar p {
   display: none;
+}
+.sort-bar .disp-dots {
+  display: none;
+}
+.sort-bar .dots {
+  display: block;
 }
 
 .sort-bar div {
@@ -339,6 +347,15 @@ footer li:hover {
 
 /* --------------Media Queries-------------- */
 
+@media (min-width: 435px) {
+  .sort-bar .disp-dots {
+    display: block;
+  }
+  .sort-bar .dots {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .top-bar .tagline,
   p {
@@ -354,7 +371,6 @@ footer li:hover {
   }
   .search {
     width: 100%;
-    margin-left: 0;
     padding: .8rem 0 0;
     grid-column: span 2;
     order: 3;
