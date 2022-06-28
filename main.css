@@ -16,6 +16,40 @@ body {
   font-family: 'Lato', sans-serif;;
 }
 
+/* ---Dark Mode--- */
+.darkmode {
+  background-color: #000;
+  color: #fff;
+}
+.darkmode a {
+  color: #fff;
+}
+.darkmode .search form {
+  background-color: #6d6d6d;
+  padding: 0;
+}
+.darkmode .search input {
+  border-radius: 1rem;
+  color: #fff;
+  padding: .8em 1.1em;
+}
+.darkmode .search .fa-solid {
+  padding-right: 1.1rem;
+}
+.darkmode .search input::placeholder {
+  color: #fff;
+}
+.darkmode .nav-menu {
+  background-color: #000;
+}
+.darkmode .nav-menu a {
+  color: #fff;
+}
+.darkmode .nav-menu li:hover {
+  background-color: #6d6d6d42;
+}
+/* ---Dark Mode--- */
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -106,10 +140,21 @@ img {
   min-height: 80px;
 }
 
-.navbar h1 {
+.logo {
+  position: relative;
+}
+.nav-menu h1,
+.logo h1 {
+  cursor: pointer;
   color: #ff385c;
   font-size: 2rem;
   font-weight: 900;
+}
+.logo h1::after {
+  content: 'Hosted';
+}
+.logo h1:hover:after {
+  content: 'dark-mode';
 }
 
 .search {
@@ -147,20 +192,44 @@ img {
   display: none;
 }
 .mobile-menu {
+  display: block;
+}
+
+.nav-menu h1 {
+  padding: 1rem;
+}
+
+.nav-menu li {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.nav-menu li:hover {
+  background-color: #eee;
+}
+.nav-menu {
+  background-color: #fff;
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  transition-duration: .3s;
+  padding-top: 1rem;
+}
+.nav-menu.active {
+  left: 0;
 }
 
-.desktop-menu li,
-.mobile-menu {
+.mobile-menu,
+.nav-menu a {
   cursor: pointer;
-}
-
-.desktop-menu li,
-.mobile-menu li {
   transition: all .2s ease-in-out;
 }
-.desktop-menu li:hover,
-.mobile-menu li:hover {
+.nav-menu a:hover,
+.mobile-menu:hover {
   color: #ff385c;
 }
 
@@ -212,6 +281,12 @@ main .listings {
 .listings .property-card {
   max-height: 300px;
   font-size: .9rem;
+}
+.listings .property-card p {
+  padding-bottom: .1rem;
+}
+.listings .property-card p:last-of-type {
+  padding-top: .3rem;
 }
 .listings img {
   height: 200px;
@@ -297,6 +372,24 @@ footer li:hover {
   p {
     font-size: .8rem;
   }
+  .navbar {
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: none;
+  }
+  .logo,
+  .mobile-menu {
+    padding: 1rem 0;
+  }
+  .search {
+    width: 100%;
+    margin-left: 0;
+    padding: .8rem 0 0;
+    grid-column: span 2;
+    order: 3;
+  }
+  .search form {
+    max-width: 100%;
+  }
   .feature-wrapper {
     --gap: 1rem;
     --num-cols: 2;
@@ -321,6 +414,9 @@ footer li:hover {
   }
   .contact .fa-solid {
     font-size: 1.2rem;
+  }
+  .mobile-menu {
+    font-size: 1.5rem;
   }
   .sort-bar p {
     display: flex;

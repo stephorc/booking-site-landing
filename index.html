@@ -8,7 +8,7 @@
     <meta name="description" content="A booking site webpage made with html and css.">
     <meta name="robots" content="index, follow">
 
-    <title>airaway - Fee-free rental bookings.</title>
+    <title>Hosted - Come for the rental, stay for the hosted vacay.</title>
 
     <!-- Flavicon & External Sheet -->
     <link rel="icon" type="image/png" sizes="64x64" href="assets/a-logo.svg">
@@ -22,7 +22,8 @@
       <header>
         <div id="top" class="top-bar">
           <h3 class="tagline">
-            Vacation like a local.
+            <!-- Vacation like a local / royalty. -->
+            Your vacation, hosted.
           </h3>
           <div class="contact">
             <div>
@@ -43,7 +44,7 @@
         </div>
         <div class="navbar">
           <div class="logo">
-            <h1>airaway</h1>
+            <h1 onclick="darkMode()"></h1>
           </div>
           <div class="search">
             <form>
@@ -56,16 +57,19 @@
             </form>
           </div>
           <div class="menu">
-            <div class="desktop-menu">
-              <nav>
-                <ul>
-                  <li>Listings</li>
-                  <li>Featured</li>
-                  <li>Popular</li>
-                </ul>
-              </nav>
-            </div>
-            <div class="mobile-menu">
+            <ul class="desktop-menu nav-menu">
+              <h1>Hosted</h1>
+              <li>
+                <a onclick="closeMenu()" href="#listings">Listings</a>
+              </li>
+              <li>
+                <a onclick="closeMenu()" href="#featured">Featured</a>
+              </li>
+              <li>
+                <a onclick="closeMenu()" href="#popular">Popular</a>
+              </li>
+            </ul>
+            <div onclick="mobileMenu()" class="mobile-menu">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
@@ -107,7 +111,7 @@
       </header>
 
       <main>
-        <div class="listings">
+        <div id="listings" class="listings">
           <div class="property-card">
             <img
               src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -289,7 +293,7 @@
             </div>
           </div>
         </div>
-        <div class="featured">
+        <div id="featured" class="featured">
           <div class="title">
             <h1>Featured</h1>
           </div>
@@ -326,7 +330,7 @@
             </div>
           </div>
         </div>
-        <div class="featured popular">
+        <div id="popular" class="featured popular">
           <div class="title">
             <h1>Popular</h1>
           </div>
@@ -388,5 +392,26 @@
         </a>
       </div>
     </div>
+
+    <script>
+      // hamburger menu open and close onclick
+      const menuBtn = document.querySelector('.mobile-menu');
+      const navMenu = document.querySelector('.nav-menu');
+
+      const mobileMenu = () => {
+        menuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      };
+
+      const closeMenu = () => {
+        navMenu.classList.toggle('active');
+      };
+
+      // dark mode onclick
+      function darkMode() {
+        const element = document.body;
+        element.classList.toggle('darkmode');
+      }
+    </script>
   </body>
 </html>
