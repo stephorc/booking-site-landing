@@ -19,4 +19,5 @@
 
 - Dark mode
 - Hamburger menu
+- Smoothly auto-scrolling to sections or top on click
 - Clean, custom UI
