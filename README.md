@@ -1,6 +1,6 @@
 # Booking Website Landing Page
 
-![Hosted - Desktop Version](https://github.com/stephorc/booking-site-landing/main/Hosted-desktop.png)
+![Hosted - Desktop Version](https://github.com/stephorc/booking-site-landing/blob/main/Hosted-desktop.png)
 
 **Project Link** - ***https://stephorc.github.io/booking-site-landing/***
 
