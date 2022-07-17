@@ -1,6 +1,6 @@
 # Booking Website Landing Page
 
-<!-- ![page preview](https://github.com/stephorc/booking-site-landing/main/booking-preview.png) -->
+![Hosted - Desktop Version](https://github.com/stephorc/booking-site-landing/main/Hosted-desktop.png)
 
 **Project Link** - ***https://stephorc.github.io/booking-site-landing/***
 
@@ -10,13 +10,14 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- JavaScript
-- Font  Awesome CDN
+- Vanilla JavaScript
+- Font Awesome CDN
 - Google Fonts
 - Mobile-first workflow
 
 ## Features
 
+- Responsive layout
 - Dark mode
 - Hamburger menu
 - Smoothly auto-scrolling to sections or top on click

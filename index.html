@@ -44,7 +44,7 @@
         </div>
         <div class="navbar">
           <div class="logo">
-            <h1 onclick="darkMode()"></h1>
+            <h1 id="dark-mode-toggle"></h1>
           </div>
           <div class="search">
             <form>
@@ -451,11 +451,32 @@
         navMenu.classList.toggle('active');
       };
 
-      // dark mode onclick
-      function darkMode() {
-        const element = document.body;
-        element.classList.toggle('darkmode');
-      }
+      // dark mode event + local storage
+      let darkMode = localStorage.getItem('darkMode');
+      const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+      const enableDarkMode = () => {
+        document.body.classList.add('darkmode');
+        localStorage.setItem('darkMode', 'enabled');
+      };
+      const disableDarkMode = () => {
+        document.body.classList.remove('darkmode');
+        localStorage.setItem('darkMode', null);
+      };
+
+      if (darkMode === 'enabled') {
+        enableDarkMode();
+      };
+
+      darkModeToggle.addEventListener('click', () => {
+        darkMode = localStorage.getItem('darkMode');
+
+        if (darkMode !== 'enabled') {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        };
+      });
     </script>
   </body>
 </html>
