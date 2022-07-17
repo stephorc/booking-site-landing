@@ -17,7 +17,7 @@
 
 ## Features
 
-- Responsive layout
+- Responsive sizing
 - Dark mode
 - Hamburger menu
 - Smoothly auto-scrolling to sections or top on click
