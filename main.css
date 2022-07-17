@@ -45,9 +45,6 @@ body {
 .darkmode .nav-menu a {
   color: #fff;
 }
-.darkmode .nav-menu li:hover {
-  background-color: #6d6d6d42;
-}
 /* ---Dark Mode--- */
 
 h1, h2, h3,
@@ -156,9 +153,6 @@ img {
 .logo h1::after {
   content: 'Hosted';
 }
-/* .logo h1:hover:after {
-  content: 'dark-mode';
-} */
 
 .search {
   justify-self: center;
@@ -426,9 +420,13 @@ footer li:hover {
     width: 100%;
     font-size: 1rem;
     padding: 1rem;
+    transition: all .2s ease-in-out;
   }
   .nav-menu li:hover {
     background-color: #eee;
+  }
+  .darkmode .nav-menu li:hover {
+    background-color: #6d6d6d42;
   }
   .nav-menu {
     background-color: #fff;
@@ -459,11 +457,11 @@ footer li:hover {
   .mobile-menu {
     display: none;
   }
-  .nav-menu h1 {
-    display: none;
-  }
   .nav-menu {
     display: flex;
+  }
+  .nav-menu h1 {
+    display: none;
   }
   .nav-menu a {
     font-size: 1rem;
