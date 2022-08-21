@@ -18,20 +18,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <!-- Page Container -->
     <div class="container">
+      <!-- Header Container -->
       <header>
+        <!-- Column 1: Top Bar -->
         <div id="top" class="top-bar">
+          <!-- Tagline -->
           <h3 class="tagline">
             <!-- Vacation like a local / royalty. -->
             Your vacation, hosted.
           </h3>
+          <!-- Company Contact -->
           <div class="contact">
+            <!-- Phone Number -->
             <div>
               <a href="tel:+1123-456-7890">
                 <i class="fa-solid fa-phone"></i>
                 <p>+1123-456-7890</p>
               </a>
             </div>
+            <!-- Email -->
             <div>
               <a href="mailto:company@email.com">
                 <i class="fa-solid fa-envelope"></i>
@@ -42,21 +49,28 @@
             </div>
           </div>
         </div>
+        <!-- Column 2: Logo, Search, Navbar -->
         <div class="navbar">
+          <!-- Logo -->
           <div class="logo">
             <h1 id="dark-mode-toggle"></h1>
           </div>
+          <!-- Search -->
           <div class="search">
             <form>
+              <!-- Search Input -->
               <div>
                 <input type="text" placeholder="Search Rentals">
               </div>
+              <!-- Search Submit -->
               <div>
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
           </div>
+          <!-- Header Nav Menu -->
           <div class="menu">
+            <!-- Menu -->
             <ul class="desktop-menu nav-menu">
               <h1>Hosted</h1>
               <li>
@@ -69,77 +83,93 @@
                 <a onclick="closeMenu()" href="#popular">Popular</a>
               </li>
             </ul>
+            <!-- Hamburger Icon -->
             <div onclick="mobileMenu()" class="mobile-menu">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
         </div>
+        <!-- Column 3: Sort Bar -->
         <div class="sort-bar">
+          <!-- Sort Bar, House -->
           <div>
             <abbr title="House">
               <i class="fa-solid fa-house-chimney"></i>
               <p>House</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Arctic -->
           <div>
-            <abbr title="Artic">
+            <abbr title="Arctic">
               <i class="fa-solid fa-snowflake"></i>
-              <p>Artic</p>
+              <p>Arctic</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Space -->
           <div>
             <abbr title="Space">
               <i class="fa-solid fa-rocket"></i>
               <p>Space</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Forest -->
           <div>
-            <abbr title="Trees">
+            <abbr title="Forest">
               <i class="fa-solid fa-tree"></i>
-              <p>Trees</p>
+              <p>Forest</p>
             </abbr>
           </div>
+          <!-- Sort Bar, City -->
           <div>
             <abbr title="City">
               <i class="fa-solid fa-building"></i>
               <p>City</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Campgrounds -->
           <div>
-            <abbr title="Camping">
+            <abbr title="Campgrounds">
               <i class="fa-solid fa-campground"></i>
-              <p>Camping</p>
+              <p>Campgrounds</p>
             </abbr>
           </div>
+          <!-- Sort Bar, More -->
           <div class="dots">
             <abbr title="More">
               <i class="fa-solid fa-ellipsis"></i>
               <p>More</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Beach -->
           <div class="disp-dots">
             <abbr title="Beach">
               <i class="fa-solid fa-umbrella-beach"></i>
               <p>Beach</p>
             </abbr>
           </div>
+          <!-- Sort Bar, Activities -->
           <div class="disp-dots">
-            <abbr title="Games">
+            <abbr title="Activities">
               <i class="fa-solid fa-volleyball"></i>
-              <p>Games</p>
+              <p>Activities</p>
             </abbr>
           </div>
         </div>
       </header>
 
+      <!-- Main Container -->
       <main>
+        <!-- Listings Container -->
         <div id="listings" class="listings">
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Rustic farmhouse"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -150,12 +180,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Mountain lodge"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -166,12 +199,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1475&q=80"
               alt="Beachside futuristic mini-mansion"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -182,12 +218,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
               alt="Northern brick house"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -198,12 +237,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80"
               alt="Trendy highrise"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -214,12 +256,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1592595896616-c37162298647?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Spanish farmhouse"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -230,12 +275,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Sustainable apartment building"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -246,12 +294,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Southern charm meets modern amenities"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -262,12 +313,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Historic manor at city's center"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -278,12 +332,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Log cabin mansion"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -294,12 +351,15 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
               alt="Celebrity beachhome"
               loading="lazy"
             >
+            <!-- Property Info -->
             <div>
               <div class="pc-title">
                 <h4>City, State</h4>
@@ -310,13 +370,16 @@
               <p class="pc-amount">$210 /day</p>
             </div>
           </div>
+          <!-- Property Card -->
           <div class="property-card">
+            <!-- Property Image -->
             <img
               src="https://images.unsplash.com/photo-1430285561322-7808604715df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               alt="Duplex in the city"
               loading="lazy"
             >
             <div>
+              <!-- Property Info -->
               <div class="pc-title">
                 <h4>City, State</h4>
                 <p>5.0 <i class="fa-solid fa-star"></i></p>
@@ -327,11 +390,15 @@
             </div>
           </div>
         </div>
+        <!-- Featured Container -->
         <div id="featured" class="featured">
+          <!-- Featured Title -->
           <div class="title">
             <h1>Featured</h1>
           </div>
+          <!-- Featured Wrapper -->
           <div class="feature-wrapper">
+            <!-- Featured Image -->
             <div class="main-img">
               <img
                 src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
@@ -339,6 +406,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Featured Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1611596189148-a74728c484ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
@@ -346,6 +414,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Featured Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80"
@@ -353,6 +422,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Featured Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -360,6 +430,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Featured Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1633505765486-e404bbbec654?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
@@ -369,11 +440,15 @@
             </div>
           </div>
         </div>
+        <!-- Popular Container -->
         <div id="popular" class="featured popular">
+          <!-- Popular Title -->
           <div class="title">
             <h1>Popular</h1>
           </div>
+          <!-- Popular Wrapper -->
           <div class="feature-wrapper">
+            <!-- Popular Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1560185009-5bf9f2849488?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -381,6 +456,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Popular Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -388,6 +464,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Popular Image -->
             <div class="main-img">
               <img
                 src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -395,6 +472,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Popular Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
@@ -402,6 +480,7 @@
                 loading="lazy"
               >
             </div>
+            <!-- Popular Image -->
             <div>
               <img
                 src="https://images.unsplash.com/photo-1616486232086-81d47190669a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
@@ -413,7 +492,9 @@
         </div>
       </main>
 
+      <!-- Footer Container -->
       <footer>
+        <!-- Column 1: Footer Left Nav -->
         <nav class="left-menu">
           <ul>
             <li>Dwell</li>
@@ -422,6 +503,7 @@
             <li>Destinations</li>
           </ul>
         </nav>
+        <!-- Column 2: Footer Right Nav -->
         <nav class="right-menu">
           <ul>
             <li>Support</li>
@@ -430,6 +512,7 @@
         </nav>
       </footer>
 
+      <!-- Back To Top Button -->
       <div class="back-to-top-btn">
         <a href="#top">
           <i class="fa-solid fa-chevron-up"></i>
